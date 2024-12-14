@@ -44,7 +44,7 @@ const Navbar = () => {
         {/*Search Area*/}
         <form className="space-x-3">
           <input
-            className="rounded-sm placeholder-slate-600 placeholder:px-2 placeholder:capitalize"
+            className="rounded-sm placeholder-slate-600 placeholder:capitalize text-slate-600 px-2"
             type="text"
             name="search"
             id="search"
