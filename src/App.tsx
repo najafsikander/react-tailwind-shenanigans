@@ -1,5 +1,7 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import TechList from './components/TechList'
+import Footer from './components/Footer'
 import './App.css'
 
 function App() {
@@ -8,6 +10,8 @@ function App() {
     <>
       <Navbar/>
       <Hero/>
+      <TechList/>
+      <Footer/>
     </>
   )
 }
