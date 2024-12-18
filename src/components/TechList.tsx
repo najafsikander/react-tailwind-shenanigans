@@ -31,7 +31,7 @@ const TechList = () => {
         <>
         <section className="w-full h-64 bg-white flex justify-center items-center gap-3 my-6 flex-wrap">
          {
-            techStackList.map((techStack:techStack) => (<TechCard label={techStack.label} logo={techStack.logo}/>))
+            techStackList.map((techStack:techStack) => (<TechCard key={techStack.label} label={techStack.label} logo={techStack.logo}/>))
          }
         </section>
         </>

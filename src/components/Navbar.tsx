@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router';
 import navLogo from "../assets/react.svg";
 
 interface INavPage {
@@ -7,12 +8,12 @@ interface INavPage {
 const navPages: INavPage[] = [
   {
     label: "Home",
-    route: "#",
+    route: "/",
   },
-  { label: "About", route: "#" },
+  { label: "Form", route: "/form" },
   {
-    label: "Contact",
-    route: "#",
+    label: "Query",
+    route: "/query",
   },
 ];
 const Navbar = () => {
@@ -35,9 +36,12 @@ const Navbar = () => {
         <div className="md:w-11 w-auto">
           <ul className="flex space-x-3">
             {navPages.map((page) => (
-              <li className="hover:underline">
-                <a href={page.route}>{page.label}</a>
-              </li>
+              // <li key={page.label} className="hover:underline">
+              //   <a href={page.route}>{page.label}</a>
+              // </li>
+              <NavLink key={page.label} to={page.route} className={({isActive}) => isActive ? 'active':''}>
+                {page.label}
+              </NavLink>
             ))}
           </ul>
         </div>

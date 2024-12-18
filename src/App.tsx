@@ -1,17 +1,24 @@
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import TechList from './components/TechList'
-import Footer from './components/Footer'
+import { BrowserRouter, Routes, Route } from 'react-router';
+
 import './App.css'
+import RootLayout from './pages/RootLayout';
+import HomePage from './pages/HomePage';
+import FormPage from './pages/FormPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
 
   return (
     <>
-      <Navbar/>
-      <Hero/>
-      <TechList/>
-      <Footer/>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<RootLayout/>}>
+            <Route index element={<HomePage/>}/>
+            <Route path='form' element={<FormPage/>}/>
+            <Route path='*' element={<NotFoundPage/>}/>
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
