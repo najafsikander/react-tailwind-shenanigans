@@ -1,6 +1,6 @@
-const Footer = () => {
+const Footer:React.FC = () => {
     return (
-        <footer className="w-full h-10 flex justify-center items-center bg-slate-900 text-white shadow-xl shadow-stone-700">
+        <footer className="w-full h-10 flex justify-center items-center bg-slate-900 text-white shadow-xl shadow-stone-700 fixed bottom-0">
             <p>This site is powered by React and is property of yours truly. 2024 &copy;</p>
         </footer>
     );

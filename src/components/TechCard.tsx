@@ -2,7 +2,7 @@ type Props = {
     label: string
     logo: string
 }
-const TechCard = ({label,logo}:Props) => {
+const TechCard:React.FC<Props> = ({label,logo}) => {
     return (
         <>
             <div className="w-80 h-60 border-2 text-2xl rounded-md border-grey shadow-xl px-4 py-4 flex justify-center items-center">

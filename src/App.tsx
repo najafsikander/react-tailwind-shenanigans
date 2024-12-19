@@ -5,6 +5,7 @@ import RootLayout from './pages/RootLayout';
 import HomePage from './pages/HomePage';
 import FormPage from './pages/FormPage';
 import NotFoundPage from './pages/NotFoundPage';
+import QueryPage from './pages/QueryPage';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
           <Route element={<RootLayout/>}>
             <Route index element={<HomePage/>}/>
             <Route path='form' element={<FormPage/>}/>
+            <Route path='query' element={<QueryPage/>}/>
             <Route path='*' element={<NotFoundPage/>}/>
           </Route>
         </Routes>

@@ -16,7 +16,7 @@ const navPages: INavPage[] = [
     route: "/query",
   },
 ];
-const Navbar = () => {
+const Navbar: React.FC = () => {
   const handleSearch = (e: React.SyntheticEvent): void => {
     e.preventDefault();
     alert("searched results");

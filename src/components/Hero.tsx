@@ -1,4 +1,4 @@
-const Hero = () => {
+const Hero:React.FC = () => {
     return (
         <>
             <section className="flex justify-center items-center w-full h-[88vh] bg-slate-600 bg-hero-background bg-cover">

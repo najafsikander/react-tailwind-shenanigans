@@ -26,7 +26,7 @@ const techStackList: Array<techStack> = [
         logo: reactRouterLogo
     }
 ]
-const TechList = () => {
+const TechList:React.FC = () => {
     return (
         <>
         <section className="w-full h-64 bg-white flex justify-center items-center gap-3 my-6 flex-wrap">
